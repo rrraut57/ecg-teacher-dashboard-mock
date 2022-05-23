@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Teacher</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar" class="active">
+            <div class="side-logo">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="teacherLogo">
+                <img src="https://nus1-api.asm.skype.com/v1/objects/0-cus-d5-36e972d3bab4c356628e1f4c52ff1e77/views/imgpsh_fullsize_anim"
+                    style="width: 122px;">
+                <h4>Stormchasers</h4>
+            </div>
+            <ul class="list-unstyled components mb-5">
+                <li class="active">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round"
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                        <div class="menuList"> Home</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <div class="menuList">Class Manager</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><span class="heroswords"></span>
+                        <div class="menuList"> Class Battles</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        <div class="menuList"> Quick Assignments</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <span class="heroinfinite"></span>
+                        <div class="menuList">The Abyss</div>
+                    </a>
+                </li>
+            </ul>
+
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                <i class="fa fa-arrow-right"></i>
+                <span class="sr-only">
+                    <div class="menuList">Toggle Menu</div>
+                </span>
+            </button>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="px-5 pt-1">
+            <nav class="navbar navbar-expand-lg navbar-light px-0">
+                <div class="container-fluid px-0 ">
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="col-6 d-flex  flex-wrap  left">
+                        <div class="middle ">
+                            <span>Deep Standards Mastery</span>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end  flex-wrap header-right pr-0">
+                        <span class="upgrade">
+                            <button class="upgradeBtn">Upgrade</button>
+                        </span>
+                        <div class="help-upgrade">
+                            <svg xmlns="http://www.w3.org/2000/svg" classname="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" strokewidth="{2}">
+                                <path strokelinecap="round" strokelinejoin="round"
+                                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z">
+                                </path>
+                            </svg>
+                            <span class="help">Help</span>
+                            <span class="notification"><i class="fa fa-bell-o" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="student-details">
+                            <div class="student-container">
+                                <div class="avatarImgBox">
+                                    <div class="avatarImgTeacher">
+                                        <img alt="Stormchasers"
+                                            src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=761&amp;q=80"
+                                            class="">
+                                    </div>
+                                </div>
+                                <div class="student-schoolName">
+                                    <div class="studentName">
+                                        Miss Sanez
+                                    </div>
+                                </div>
+                                <div class="logout">
+                                    <img src="images/logout.svg">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col-md-6">
+                    <section class="teacher-table mb-3">
+                        <div class="teacher-table-inner ">
+                            <div class="tableTitle">Class Battles <i class="fa fa-external-link" aria-hidden="true"></i>
+                            </div>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#class" role="tab"
+                                        aria-controls="home" aria-selected="true">Upcoming </a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#school" role="tab"
+                                        aria-controls="profile" aria-selected="false">Previously </a>
+                                </li>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="class" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <table class="table table-borderless table-striped" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>Date</th>
+                                                <th>Time</th>
+                                                <th>Opponent Teacher</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>10 May 22</td>
+                                                <td>10:20PM</td>
+                                                <td>Miss Sanez </td>
+                                            </tr>
+                                            <tr>
+                                                <td>12 May 22</td>
+                                                <td>12:20PM</td>
+                                                <td>Miss Sanez </td>
+                                            </tr>
+                                            <tr>
+                                                <td>20 May 22</td>
+                                                <td>16:20PM</td>
+                                                <td>Miss Sanez </td>
+                                            </tr>
+                                            <tr>
+                                                <td>17 May 22</td>
+                                                <td>05:20PM</td>
+                                                <td>Miss Sanez </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="school" role="tabpanel" aria-labelledby="profile-tab">
+                                    <table class="table table-borderless table-striped" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>Date</th>
+                                                <th>Time</th>
+                                                <th>Opponent Teacher</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>10 May 22</td>
+                                                <td>10:20PM</td>
+                                                <td>Miss Sanez </td>
+                                            </tr>
+                                            <tr>
+                                                <td>12 May 22</td>
+                                                <td>12:20PM</td>
+                                                <td>Miss Sanez </td>
+                                            </tr>
+                                            <tr>
+                                                <td>20 May 22</td>
+                                                <td>16:20PM</td>
+                                                <td>Miss Sanez </td>
+                                            </tr>
+                                            <tr>
+                                                <td>17 May 22</td>
+                                                <td>05:20PM</td>
+                                                <td>Miss Sanez </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end first table -->
+
+                    <section class="teacher-table mb-3">
+                        <div class="teacher-table-inner">
+                            <div class="tableTitle">Class Ranking <i class="fa fa-external-link" aria-hidden="true"></i>
+                            </div>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#studentClass"
+                                        role="tab" aria-controls="home" aria-selected="true">Class</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#studentSchool"
+                                        role="tab" aria-controls="profile" aria-selected="false">School</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#studentDistrict"
+                                        role="tab" aria-controls="contact" aria-selected="false">District</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#studentState"
+                                        role="tab" aria-controls="contact" aria-selected="false">State</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#studentContact"
+                                        role="tab" aria-controls="contact" aria-selected="false">World</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="studentClass" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <table class="table table-borderless table-striped" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>Rank</th>
+                                                <th>Class</th>
+                                                <th>School</th>
+                                                <th>Wins</th>
+                                                <th>Losses</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Doe</td>
+                                                <td>VeryNext </td>
+                                                <td>234</td>
+                                                <td>66</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>John</td>
+                                                <td>Next Door</td>
+                                                <td>23</td>
+                                                <td>66</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Paul</td>
+                                                <td>School Next </td>
+                                                <td>24</td>
+                                                <td>6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Sam</td>
+                                                <td>Colony</td>
+                                                <td>23</td>
+                                                <td>669</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="studentSchool" role="tabpanel"
+                                    aria-labelledby="profile-tab">
+                                    <table class="table table-borderless table-striped" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>Rank</th>
+                                                <th>Class</th>
+                                                <th>School</th>
+                                                <th>Wins</th>
+                                                <th>Losses</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>John</td>
+                                                <td>VeryNext </td>
+                                                <td>234</td>
+                                                <td>66</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Eagle</td>
+                                                <td>Next Door</td>
+                                                <td>23</td>
+                                                <td>66</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Storm</td>
+                                                <td>School Next </td>
+                                                <td>24</td>
+                                                <td>6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Rex</td>
+                                                <td>Colony</td>
+                                                <td>23</td>
+                                                <td>669</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="studentDistrict" role="tabpanel"
+                                    aria-labelledby="contact-tab">
+                                    <table class="table table-borderless table-striped" cellspacing="0">
+                                        <thead style="border-bottom: 1px solid rgba(133, 189, 245, 0.44);">
+                                            <tr>
+                                                <th>Rank</th>
+                                                <th>Class</th>
+                                                <th>School</th>
+                                                <th>Wins</th>
+                                                <th>Losses</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Doe</td>
+                                                <td>VeryNext </td>
+                                                <td>234</td>
+                                                <td>66</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Eagle</td>
+                                                <td>Next Door</td>
+                                                <td>23</td>
+                                                <td>66</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Storm</td>
+                                                <td>School Next </td>
+                                                <td>24</td>
+                                                <td>6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Rex</td>
+                                                <td>Colony</td>
+                                                <td>23</td>
+                                                <td>669</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="studentState" role="tabpanel"
+                                    aria-labelledby="contact-tab">
+                                    <table class="table table-borderless table-striped" cellspacing="0">
+                                        <thead style="border-bottom: 1px solid rgba(133, 189, 245, 0.44);">
+                                            <tr>
+                                                <th>Rank</th>
+                                                <th>Class</th>
+                                                <th>School</th>
+                                                <th>Wins</th>
+                                                <th>Losses</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Roxette</td>
+                                                <td>VeryNext </td>
+                                                <td>234</td>
+                                                <td>66</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Eagle</td>
+                                                <td>Next Door</td>
+                                                <td>23</td>
+                                                <td>66</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Storm</td>
+                                                <td>School Next </td>
+                                                <td>24</td>
+                                                <td>6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Rex</td>
+                                                <td>Colony</td>
+                                                <td>23</td>
+                                                <td>669</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="studentContact" role="tabpanel"
+                                    aria-labelledby="contact-tab">
+                                    <table class="table table-borderless table-striped" cellspacing="0">
+                                        <thead style="border-bottom: 1px solid rgba(133, 189, 245, 0.44);">
+                                            <tr>
+                                                <th>Rank</th>
+                                                <th>Class</th>
+                                                <th>School</th>
+                                                <th>Wins</th>
+                                                <th>Losses</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Roxette</td>
+                                                <td>VeryNext </td>
+                                                <td>234</td>
+                                                <td>66</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Eagle</td>
+                                                <td>Next Door</td>
+                                                <td>23</td>
+                                                <td>66</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Storm</td>
+                                                <td>School Next </td>
+                                                <td>24</td>
+                                                <td>6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Rex</td>
+                                                <td>Colony</td>
+                                                <td>23</td>
+                                                <td>669</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-6">
+                    <section class="teacher-table mb-3">
+                        <div class="teacher-table-inner abyssContainer">
+                            <div class="tableTitle">The Abyss<i class="fa fa-external-link" aria-hidden="true"></i>
+                            </div>
+                            <div class="questionTitle">Total questions answered<span class="totalQuestion">7,558</span>
+                            </div>
+                            <div class="abyssCardBox">
+                                <div class="abyssCard">
+                                    <div class="left">
+                                        Domain<h4>Geometry and Measurement</h4>
+                                    </div>
+                                    <div class="right">
+                                        <div class="classScore">
+                                            Class scores</div>
+                                        <span class="classScroreNo">97%</span>
+                                    </div>
+                                </div>
+                                <div class="abyssCard">
+                                    <div class="left">
+                                        Domain<h4>Geometry and Measurement</h4>
+                                    </div>
+                                    <div class="right">
+                                        <div class="classScore">
+                                            Class scores</div>
+                                        <span class="classScroreNo">97%</span>
+                                    </div>
+                                </div>
+                                <div class="abyssCard">
+                                    <div class="left">
+                                        Domain<h4>Geometry and Measurement</h4>
+                                    </div>
+                                    <div class="right">
+                                        <div class="classScore">
+                                            Class scores</div>
+                                        <span class="classScroreNo">97%</span>
+                                    </div>
+                                </div>
+                                <div class="abyssCard">
+                                    <div class="left">
+                                        Domain<h4>Geometry and Measurement</h4>
+                                    </div>
+                                    <div class="right">
+                                        <div class="classScore">
+                                            Class scores</div>
+                                        <span class="classScroreNo">97%</span>
+                                    </div>
+                                </div>
+                                <div class="abyssCard">
+                                    <div class="left">
+                                        Domain<h4>Geometry and Measurement</h4>
+                                    </div>
+                                    <div class="right">
+                                        <div class="classScore">
+                                            Class scores</div>
+                                        <span class="classScroreNo">97%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end thired table -->
+
+                    <section class="teacher-table mb-3">
+                        <div class="teacher-table-inner ">
+                            <div class="tableTitle">Messages <i class="fa fa-external-link" aria-hidden="true"></i>
+                            </div>
+                            <div class="allStudentList mt-2">
+                                <div class="d-flex justify-content-start mb-2 studentList">
+                                    <div class="img_cont_msg">
+                                        <div class="rounded-circle"><img
+                                                src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
+                                                class=" user_img_msg"></div>
+                                    </div>
+                                    <div class="msg_cotainer w-100">
+                                        <span class="studentName">
+                                            <span class="studentMsgName">Name ipsum Lorem ipsum</span>
+                                            <span class="studentDis">Lorem ipsum Lorem ipsum</span>
+                                        </span>
+                                       
+                                        <span class="msg_time_notification">
+                                            <span class="time">8:40 AM</span>
+                                            <span class="notification">10</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start mb-2 studentList">
+                                    <div class="img_cont_msg">
+                                        <div class="rounded-circle"><img
+                                                src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
+                                                class=" user_img_msg"></div>
+                                    </div>
+                                    <div class="msg_cotainer w-100">
+                                        <span class="studentName">
+                                            <span class="studentMsgName">Name ipsum Lorem ipsum</span>
+                                            <span class="studentDis">Lorem ipsum Lorem ipsum</span>
+                                        </span>
+                                       
+                                        <span class="msg_time_notification">
+                                            <span class="time">8:40 AM</span>
+                                            <span class="notification">10</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start mb-2 studentList">
+                                    <div class="img_cont_msg">
+                                        <div class="rounded-circle"><img
+                                                src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
+                                                class=" user_img_msg"></div>
+                                    </div>
+                                    <div class="msg_cotainer w-100">
+                                        <span class="studentName">
+                                            <span class="studentMsgName">Name ipsum Lorem ipsum</span>
+                                            <span class="studentDis">Lorem ipsum Lorem ipsum</span>
+                                        </span>
+                                       
+                                        <span class="msg_time_notification">
+                                            <span class="time">8:40 AM</span>
+                                            <span class="notification">10</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start mb-2 studentList">
+                                    <div class="img_cont_msg">
+                                        <div class="rounded-circle"><img
+                                                src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
+                                                class=" user_img_msg"></div>
+                                    </div>
+                                    <div class="msg_cotainer w-100">
+                                        <span class="studentName">
+                                            <span class="studentMsgName">Name ipsum Lorem ipsum</span>
+                                            <span class="studentDis">Lorem ipsum Lorem ipsum</span>
+                                        </span>
+                                       
+                                        <span class="msg_time_notification">
+                                            <span class="time">8:40 AM</span>
+                                            <span class="notification">10</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start mb-2 studentList">
+                                    <div class="img_cont_msg">
+                                        <div class="rounded-circle"><img
+                                                src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
+                                                class=" user_img_msg"></div>
+                                    </div>
+                                    <div class="msg_cotainer w-100">
+                                        <span class="studentName">
+                                            <span class="studentMsgName">Name ipsum Lorem ipsum</span>
+                                            <span class="studentDis">Lorem ipsum Lorem ipsum</span>
+                                        </span>
+                                       
+                                        <span class="msg_time_notification">
+                                            <span class="time">8:40 AM</span>
+                                            <span class="notification">10</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start mb-2 studentList">
+                                    <div class="img_cont_msg">
+                                        <div class="rounded-circle"><img
+                                                src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
+                                                class=" user_img_msg"></div>
+                                    </div>
+                                    <div class="msg_cotainer w-100">
+                                        <span class="studentName">
+                                            <span class="studentMsgName">Name ipsum Lorem ipsum</span>
+                                            <span class="studentDis">Lorem ipsum Lorem ipsum</span>
+                                        </span>
+                                       
+                                        <span class="msg_time_notification">
+                                            <span class="time">8:40 AM</span>
+                                            <span class="notification">10</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start mb-2 studentList">
+                                    <div class="img_cont_msg">
+                                        <div class="rounded-circle"><img
+                                                src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
+                                                class=" user_img_msg"></div>
+                                    </div>
+                                    <div class="msg_cotainer w-100">
+                                        <span class="studentName">
+                                            <span class="studentMsgName">Name ipsum Lorem ipsum</span>
+                                            <span class="studentDis">Lorem ipsum Lorem ipsum</span>
+                                        </span>
+                                       
+                                        <span class="msg_time_notification">
+                                            <span class="time">8:40 AM</span>
+                                            <span class="notification">10</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="copyright">Copyright © 2022 | Underwater | All Rights Reserved</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
